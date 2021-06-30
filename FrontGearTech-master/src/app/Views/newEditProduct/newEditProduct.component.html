@@ -1,0 +1,76 @@
+<!-- <h2 mat-dialog-title>Productos</h2>
+<mat-dialog-content>Ingrese nuevo producto</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close mat-dialog-close="true">Guardar</button>
+    <button mat-button mat-dialog-close mat-dialog-close="false">Cancelar</button>
+
+</mat-dialog-actions> -->
+<form [formGroup]="editForm" (ngSubmit)="editProduct(editForm.value)">
+    <h2 mat-dialog-title>Productos</h2>
+    <mat-dialog-content>
+        <div class="form-group row">
+            <mat-form-field>
+                <input matInput type="text" placeholder="Nombre Producto" formControlName="productName">
+            </mat-form-field>
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Precio Producto" formControlName="productPrice">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Cantidad Producto" formControlName="productStock">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Imagen Producto" formControlName="imageProduct">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="categoria" formControlName="idCategory">
+                </mat-form-field>
+            </div>
+        </div>           
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button  mat-raised-button color="primary" [mat-dialog-close] type="submit">Guardar</button>
+        <button  mat-raised-button color="danger" (click)="cancel()">Cancelar</button>
+
+    </mat-dialog-actions>
+</form>
+<!-- <div class="container">
+    <form [formGroup]="editForm" (ngSubmit)="editProduct(editForm.value)">
+        <div class="form-group">
+            <label >Nombre Producto</label>
+            <input type="text" class="form-control" placeholder="Nombre Producto" formControlName="productName">
+        </div>
+        <div class="form-group row">
+             <div class="col">
+                 <label for="exampleFormControlInput1">Precio Producto</label>
+                 <input type="text" class="form-control" placeholder="Precio Producto" formControlName="productPrice">
+             </div>         
+             <div class="col">
+                 <label for="exampleFormControlInput1">Cantidad Producto</label>
+                 <input type="text" class="form-control" placeholder="catidad Producto" formControlName="productStock">
+             </div>  
+         </div>
+         <div class="form-group row">
+             <div class="col">
+                 <label for="exampleFormControlInput1">Imagen Producto</label>
+                 <input type="text" class="form-control" placeholder="Imagen Producto" formControlName="imageProduct">
+             </div>         
+             <div class="col">
+                 <label for="exampleFormControlInput1">Categoria</label>
+                 <input type="text" class="form-control" placeholder="Categoria" formControlName="idCategory">
+             </div>  
+         </div>
+         <br>
+         <button type="submit" class="btn btn-primary" >Agregar producto</button>
+    </form>
+ </div> -->

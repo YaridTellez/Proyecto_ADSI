@@ -1,3 +1,88 @@
+<!-- <html>
+    
+        <app-navbar>
+            
+        </app-navbar>
+        <app-sidenav>       
+        </app-sidenav> 
+<div class="container">   
+    <h3>Listado Productos</h3>
+    <button type="button" class="btn btn-primary" (click)="newProduct()">Nuevo producto</button>
+    <table class="table table-hover">
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr >
+                    <th scope="col">ID</th> 
+                    <th scope="col">Name</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products" (click)="editProduct(product.idProduct)"> 
+                    <th scope="row">{{ product.idProduct }}</th>
+                    <td>{{ product.productName }}</td>
+                    <td>{{ product.productPrice }}</td>
+                    <td>{{ product.productStock }}</td>
+                    <td>{{ product.idCategory }}</td>
+                    <td>{{ product.imageProduct }}</td>
+                </tr>
+              
+            </tbody>
+        </table>
+     </table>
+</div>
 
+<button mat-raised-button (click)="openDialog()">Open Dialog</button>
+        <app-footer></app-footer>
+        <div class="container">
+            <app-products></app-products>
+        </div>
+    
+</html> -->
 
-<app-footer></app-footer>
+<html>
+    <nav>
+        
+    </nav>
+<body>
+    <app-header></app-header>
+    <div class="hero">
+        <img src="../../Resource/Images/hero1.jpg" alt="">
+    </div>
+    <main class="seccion-productos">
+        <div class="titulo-productos centrar-texto">
+            <h2>Nuestros Productos</h2>
+        </div>
+        <div class="nuestros-productos contenedor">
+            
+            <div class="productos">
+                <img src="../../Resource/Images/productos-computadores.png" alt="">
+                <h3 class="centrar-texto">Computadores</h3>                
+            </div>
+            <div class="productos">
+                <img src="../../Resource/Images/productos-graficas.png" alt="">
+                <h3 class="centrar-texto">T.Graficas</h3>                
+            </div>
+            <div class="productos">
+                <img src="../../Resource/Images/productos-monitores.png" alt="">
+                <h3 class="centrar-texto">Monitores</h3>                
+            </div>
+            <div class="productos">
+                <img src="../../Resource/Images/productos-placabase.png" alt="">
+                <h3 class="centrar-texto">Placas Base</h3>                
+            </div>
+        </div>
+    </main>
+    <section class="hero-contacto">
+        <div class="titulo-hero-contacto">
+            <h3>Registrate para conocer todo sobre nuestros productos</h3>
+        </div>
+        <a href="#" class="btn btn-registro">Registrate</a>
+
+    </section>
+    <app-footer></app-footer>
+</body>
+</html>

@@ -6,12 +6,15 @@
             <p>Ingrese los datos de su cuenta</p>
             </div>
             <div class="formulario">
-            <form action="" method="post">
-                <input class="input" type="email" name="" id="" placeholder="correo electronico">
-                <input class="input" type="password" name="" id="" placeholder="contraseña">
+            <form [formGroup] = "loginForm" (ngSubmit)="onLogin(loginForm.value)">
+                <input class="input" type="email" name="" id="UserName" placeholder="correo electronico" formControlName="UserName">
+                <input class="input" type="password" name="" id="Password" placeholder="contraseña" formControlName="Password">
+                <input class="btn btn-submit" type="submit" value="Log In">
             </form>
-            <a href="" class="enlace-contraseña">¿olvido su contraseña?</a>
-            <input class="btn btn-submit" type="submit" value="Ingresar">
+            <div class="alert alert-danger" *ngIf="errorStatus">
+                <p>{{errorMsj}}</p>
+             </div>
+            <a href="" class="enlace-contraseña">¿olvido su contraseña?</a>            
             </div>
         </div>
     </div>

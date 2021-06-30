@@ -1,0 +1,48 @@
+<!-- <div>
+    <h1 mat-dialog-title>Producto</h1>
+    <div mat-dialog-content>
+        <div style="display: flex; flex-direction: column; margin:1rem auto; max-width: 600px; padding: 1rem;">
+
+            <mat-form-field>
+                <input matInput [(ngModel)]="data.productName" type="text" placeholder="Nombre Producto">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="cancel()">Cancelar</button>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Confirmar</button>
+    </div>
+</div> -->
+<!-- <form novalidate #form="ngForm" (submit)="onSubmitProduct(form)">
+    <input type="hidden" name="idProduct" [value]="productService.formDataProducts.idProduct"/>
+    <div class="form-group">
+        <label>Nombre Producto</label>
+        <input  class="form-control from-control-lg" placeholder="Nombre Producto" name="productName" #productName="ngModel"
+         [(ngModel)]="productService.formDataProducts.productName" required>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Precio Producto</label>
+            <input  class="form-control from-control-lg" placeholder="Precio Producto" name="productPrice" #productPrice="ngModel"
+             [(ngModel)]="productService.formDataProducts.productPrice" required>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Cantidad Producto</label>
+            <input  class="form-control from-control-lg" placeholder="Cantidad Producto" name="productStock" #productStock="ngModel" 
+            [(ngModel)]="productService.formDataProducts.productStock" required>
+        </div>    
+        <div class="form-group col-md-3" >
+            <label>Categoria Producto</label>
+            <input  class="form-control from-control-lg" placeholder="Id Categoria " name="idCategory" #idCategory="ngModel"
+             [(ngModel)]="productService.formDataProducts.idCategory" required>
+        </div>
+    </div>   
+        <div class="form-group col-md-8">
+            <label>Imagen Producto</label>
+            <input  class="form-control from-control-lg" placeholder="Imagen Producto" name="imageProduct" #imageProduct="ngModel" 
+            [(ngModel)]="productService.formDataProducts.imageProduct">
+        </div>  
+        <div class="form-group col-md-12">
+            <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">Submit</button>
+        </div>
+</form> -->

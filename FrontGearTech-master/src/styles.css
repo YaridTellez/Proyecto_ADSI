@@ -1,3 +1,9 @@
+@import "~@angular/material/prebuilt-themes/purple-green.css"; 
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 :root{
     --primario: #222831;
     --amarillo: #FF9F1C;
@@ -169,7 +175,7 @@ h2{
 /*Hero contacto*/
 
 .hero-contacto{
-    background-image:url("./app/Views/Images/hero-contacto.jpg");
+    background-image:url("../src/app/Resource/Images/hero-contacto.jpg");
     height: 40rem;
     background-position: center center;
     background-repeat: no-repeat;
@@ -265,7 +271,7 @@ h2{
 /* LOGIN*/
 
 .body-login{
-    background-image:url("./app/Views/Images/background-login.jpg");
+    background-image:url("../src/app/Resource/Images/background-login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -324,7 +330,7 @@ h2{
 }
 
 .body-register{
-    background-image:url("./app/Views/Images/background-register.jpg");
+    background-image:url("../src/app/Resource/Images/background-register.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -360,7 +366,9 @@ h2{
 
     margin-bottom: 2rem;
 }
-
+.contenido-filtro input[type="checkbox"] + label{
+    
+}
 .main-productos{
     flex:70%;
     padding: 3rem;
